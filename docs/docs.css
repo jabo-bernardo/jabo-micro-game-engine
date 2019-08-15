@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #AADD00; 
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #DDD;
+}
+
+#header {
+	width: 100%;
+	height: 96px;
+	/* Credits: https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi6wsjL6YbkAhWJbN4KHTAIAj8QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.goodfreephotos.com%2Fchina%2Fhong-kong%2Fchina-hong-kong-city-with-mountains-in-the-background.jpg.php&psig=AOvVaw3QaBjSYFV1TCTXIXC_QES3&ust=1566025408948709*/
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header_bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header #site-title {
+	font-size: 20px;
+	color: white;
+	padding: 32px;
+	font-weight: bold;
+}
+
+.navigator {
+	width: 20%;
+	height: calc(100vh - 96px);
+	overflow-y: scroll;
+	background-color: #262626;
+	overflow-x: hidden;
+	float: left;
+}
+
+.navigator .headline {
+	color: #AADD00;
+	font-size: 17px;
+	font-weight: bold;
+	user-select: none;
+	padding: 8px;
+}
+
+.navigator .nav-group-child {
+	margin-left: 10%;
+}
+
+.navigator .nav-group-child .child {
+	background-color: #EEE;
+	outline: none;
+	color: #262626;
+	border: none;
+	width: 100%;
+	padding: 2px 0px;
+	margin-top: 6px;
+	transition: all 0.2s ease-in-out;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigator .nav-group-child .child:hover {
+	transform: scale(1.05);
+	opacity: 0.95;
+}
+
+.navigator .active {
+	background-color: #AADD00!important;
+	color: #262626!important;
+}
+
+.main-content {
+	width: 80%;
+	height: calc(100vh - 96px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	float: left;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+	padding: 64px;
+	margin-top: 64px;
+	background-color: white;
+}
+
+hr {
+	margin: 8px 0px;
+}
+
+doc-title {
+	font-weight: bold;
+	font-size: 24px;
+	display: block;
+}
+
+doc-timestamp {
+	font-size: 14px;
+	color: #545454;
+	display: block;
+	font-weight: lighter;
+}
+
+doc-warning {
+	width: 100%;
+	padding: 8px;
+	display: block;
+	background-color: rgba(255, 0, 0, 0.5);
+	border-radius: 8px;
+	color: #FF0000!important;
+	font-weight: bold;
+	margin: 8px 0px;
+	transition: all 0.5s ease-in-out;
+	user-select: none;
+}
+
+doc-avoid {
+	width: 100%;
+	padding: 8px;
+	display: block;
+	background-color: rgba(255, 255, 0, 0.5);
+	border-radius: 8px;
+	color: #FFCC00;
+	font-weight: bold;
+	margin: 8px 0px;
+	transition: all 0.5s ease-in-out;
+	user-select: none;
+}
+
+doc-avoid:hover {
+	transform: scale(1.01);
+}
+
+doc-warning:hover {
+	transform: scale(1.01);
+}
+
+doc-subtitle {
+	font-weight: bold;
+	font-size: 18px;	
+	display: block;
+}
+
+doc-para {
+	font-size: 16px;
+	display: block;
+}
+
+.indent1 {
+	margin-left: 32px;
+}
+
+.indent2 {
+	margin-left: 64px;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.main-content .content a {
+	color: #AADD00;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+}
+
+.main-content .content a:hover {
+	transform: scale(1.05);
+}
+
+/*FOOTER*/
+#footer {
+	margin-top: 128px;
+}
+#footer #title {
+	font-size: 24px;
+	padding: 16px;
+	color: #262626;
+	font-weight: bold;
+}
+
+#footer p {
+	color: #262626;
+}
+
+#footer a {
+	color: #AADD00;
+	font-size: 32px;
+	padding: 8px;
+	display: inline-block;
+}
