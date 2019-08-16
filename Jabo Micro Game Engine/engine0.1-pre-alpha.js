@@ -6,7 +6,7 @@
 
 class Jabo {
 	constructor() {
-		this._version = '0.1';
+		this._version = '0.1-pre-alpha';
 		this._canvas = document.getElementById('jabo-viewport');
 		this._canvasContext = this._canvas.getContext('2d');
 	}
