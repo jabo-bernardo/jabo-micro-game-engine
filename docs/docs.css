@@ -31,7 +31,7 @@ body {
 	width: 100%;
 	height: 96px;
 	/* Credits: https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi6wsjL6YbkAhWJbN4KHTAIAj8QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.goodfreephotos.com%2Fchina%2Fhong-kong%2Fchina-hong-kong-city-with-mountains-in-the-background.jpg.php&psig=AOvVaw3QaBjSYFV1TCTXIXC_QES3&ust=1566025408948709*/
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header_bg.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../img/header_bg.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body {
 }
 
 .navigator .nav-group-child .child {
-	background-color: #EEE;
+	background-color: #AADD00;
 	outline: none;
 	color: #262626;
 	border: none;
@@ -250,17 +250,19 @@ code {
 	display: block;
 	width: 100%;
 	height: auto;
-	margin-top: 6px;
+	margin: 8px 0px;
 	border-radius: 8px;
 	transition: all 0.5s ease-in-out;
 }
 
 htmltag {
 	color: #AADD00;
+	font-weight: bold!important;
 }
 
 htmlproperty {
 	color: #DDAA00;
+	font-weight: lighter!important;
 }
 
 jscomment {
@@ -277,5 +279,20 @@ code * {
 }
 
 code:hover {
-	transform: scale(1.01);
+	transform: scale(1.03);
+}
+
+.c_green {
+	color: #AADD00;
+}
+
+.bullet {
+	display: list-item;
+	list-style-type: disc;
+	list-style-position: inside;
+	font-weight: bold;
+}
+
+.block {
+	display: block;
 }

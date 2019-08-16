@@ -1,4 +1,4 @@
-const docsContent = "(nav-grp) / Hello Micro Engine! (end) (nav-child) // intro-to-engine.html Introduction (end) // installengine.html Installing The Engine (end) // setupengine.html Setting up (end) // usinglib.html Using Libraries (end) (nav-child-end) (nav-grp-end) (nav-grp) / Built-in Libraries (end) (nav-child) // introlibrary.html Introduction (end) (nav-child-end) (nav-grp-end)";
+const docsContent = "(nav-grp) / Hello Micro Engine! (end) (nav-child) // intro-to-engine.html Introduction (end) // installengine.html Installing The Engine (end) // setupengine.html Setting up (end) // usinglib.html Using Libraries (end) (nav-child-end) (nav-grp-end) (nav-grp) / Built-in Libraries (end) (nav-child) // intro-to-lib.html Introduction (end) // list-of-lib.html List of Libraries (end) // lib_jabo.html Library - Jabo() (end) // lib_scn_mngr.html Library - SceneManager() (end) (nav-child-end) (nav-grp-end)";
 
 let goTo = link => {
 	location.href = link;

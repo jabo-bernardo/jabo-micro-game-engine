@@ -41,28 +41,27 @@
 			<br>
 			<doc-para>Once you downloaded the file you need to setup your workspace</doc-para>
 			<br>
-			<hr>
 			<doc-subtitle>Workspace Diagram</doc-subtitle>
 			<folder-diagram>
 				<foldia-item0>js</foldia-item0>
 				<foldia-item1>engine(ver).js</foldia-item1>
 				<foldia-item0>index.html</foldia-item0>
 			</folder-diagram>
-			<hr>
+			<br>
 			<doc-para>In order for engine to work fine you must have a proper format for your index.html file, your index.html should have:</doc-para>
 			<code>
-				<ln>1 </ln><htmltag>&ltcanvas <htmlproperty>id="jabo-viewport" width="(game-size)" height="(game-size)"</htmlproperty>&gt</htmltag>Your browser doesn't support HTML5<htmltag>&lt/canvas&gt</htmltag><br>
-				<ln>2 </ln><htmltag>&ltscript <htmlproperty>type="text/javascript" src="js/engine(ver).js"</htmlproperty>&gt</htmltag><htmltag>&lt/script&gt</htmltag>
+				<ln>1 </ln><htmltag>&ltcanvas <htmlproperty>id<htmltag>=</htmltag>"jabo-viewport" width<htmltag>=</htmltag>"(game-size)" height<htmltag>=</htmltag>"(game-size)"</htmlproperty>&gt</htmltag>Your browser doesn't support HTML5<htmltag>&lt/canvas&gt</htmltag><br>
+				<ln>2 </ln><htmltag>&ltscript <htmlproperty>type<htmltag>=</htmltag>"text/javascript" src<htmltag>=</htmltag>"js/engine(ver).js"</htmlproperty>&gt</htmltag><htmltag>&lt/script&gt</htmltag>
 			</code>
 			<br>
 			<doc-para>Once you are done, Go to your javascript file (not the <a href="../index.html#download">engine.js</a>) and write the code below</doc-para>
 			<code>
-				<ln>1 </ln><htmltag>let</htmltag> engine <htmltag>= new </htmltag><htmlproperty>Jabo()</htmlproperty>;
+				<ln>1 </ln><htmltag>let</htmltag> engine <htmltag>= new </htmltag><htmlproperty>Jabo</htmlproperty>();
 			</code>
 			<br>
 			<doc-para>To check if the engine is succesfully working, do the following</doc-para>
 			<code>
-				<ln>1 </ln><htmltag>let</htmltag> engine <htmltag>= new </htmltag><htmlproperty>Jabo()</htmlproperty>;<br>
+				<ln>1 </ln><htmltag>let</htmltag> engine <htmltag>= new </htmltag><htmlproperty>Jabo</htmlproperty>();<br>
 				<ln>2 </ln><htmltag>console.log</htmltag>(<htmlproperty>engine</htmlproperty>.version); <br>
 				<ln>3 </ln><jscomment>// In the console, You must see the version of your engine.js</jscomment>
 			</code>
