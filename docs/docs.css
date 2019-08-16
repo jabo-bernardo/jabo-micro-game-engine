@@ -297,3 +297,16 @@ code:hover {
 .block {
 	display: block;
 }
+
+rel-item {
+	display: block;
+	display: list-item;
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 32px;
+}
+
+rel-info {
+	display: block;
+	margin-left: 64px;
+}
