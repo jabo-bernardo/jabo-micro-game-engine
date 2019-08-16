@@ -34,14 +34,29 @@
 	</div>
 	<div class="main-content">
 		<div class="content">
-			<doc-title>List of Libraries</doc-title>
-			<doc-timestamp>Last Updated: August 18, 2019 18:42</doc-timestamp>
+			<doc-title>Scene()</doc-title>
+			<doc-timestamp>Last Updated: August 18, 2019 19:19</doc-timestamp>
 			<hr>
-			<a href="lib_jabo.html">Jabo()</a><doc-para> - This is the main library for the engine.</doc-para><br>
-			<a href="lib_scn_mngr.html">SceneManager()</a><doc-para> - Library that manages the scene.</doc-para><br>
-			<a href="lib_scene.html">Scene()</a><doc-para> - Creates a new scene</doc-para><br>
-			<a href="lib_jutil.html">JUtil()</a><doc-para> - This will help you on some calculations.</doc-para><br>
-			<a href="lib_jsprite.html">JSpite()</a><doc-para> - Looking for sprite? JSprite got you.</doc-para><br>
+			<doc-subtitle>Usage</doc-subtitle>
+			<code>
+				<ln>01  </ln><htmltag>new </htmltag><htmlproperty>Scene({</htmlproperty><br>
+				<ln>02  </ln><htmlproperty class='indent1'>initialize</htmlproperty>: <htmltag>function</htmltag>() <htmlproperty>{</htmlproperty><br>
+				<ln>03  </ln><jscomment class='indent2'>// Put your code here.</jscomment><br>
+				<ln>04  </ln><htmlproperty class='indent1'>},</htmlproperty><br>
+				<ln>05  </ln><htmlproperty class='indent1'>update</htmlproperty>: <htmltag>function</htmltag>() <htmlproperty>{</htmlproperty><br>
+				<ln>06  </ln><jscomment class='indent2'>// Put your code here.</jscomment><br>
+				<ln>07  </ln><htmlproperty class='indent1'>},</htmlproperty><br>
+				<ln>08  </ln><htmlproperty class='indent1'>render</htmlproperty>: <htmltag>function</htmltag>() <htmlproperty>{</htmlproperty><br>
+				<ln>09  </ln><jscomment class='indent2'>// Put your code here.</jscomment><br>
+				<ln>10 </ln><htmlproperty class='indent1'>}</htmlproperty><br>
+				<ln>11 </ln><htmlproperty>})</htmlproperty>;<br>
+				<ln>12 </ln><jscomment>// Returns object Scene()</jscomment>
+			</code>
+			<br>
+			<doc-subtitle>Properties</doc-subtitle>
+			<hr>
+			<doc-para class='c_green bullet indent1'>Scene.options</doc-para>
+			<doc-para class='indent2'>- returns [<htmlproperty>object</htmlproperty>]</doc-para><br>
 			<div id="footer">
 				<center>
 					<p id="title">Jabo Micro Game Engine</p>
