@@ -34,30 +34,22 @@
 	</div>
 	<div class="main-content">
 		<div class="content">
-			<doc-title>Scene()</doc-title>
-			<doc-timestamp>Last Updated: August 18, 2019 19:19</doc-timestamp>
+			<doc-title>Canvas Rendering Snippet</doc-title>
+			<doc-timestamp>Last Updated: </doc-timestamp>
 			<hr>
-			<doc-subtitle>Usage</doc-subtitle>
+			<doc-para>Jabo Micro Game Engine uses <a target='_blank'href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">Canvas</a> to render graphics on screen. The reason is it's convenient and fast at the same time.</doc-para>
+			<br>
+			<doc-para>The Canvas Rendering Context is located at <a href="lib_jabo.html">Jabo() Library</a> to access it, follow the code below.</doc-para>
 			<code>
-				<ln>01  </ln><htmltag>new </htmltag><htmlproperty>Scene({</htmlproperty><br>
-				<ln>02  </ln><htmlproperty class='indent1'>initialize</htmlproperty>: <htmltag>function</htmltag>() <htmlproperty>{</htmlproperty><br>
-				<ln>03  </ln><jscomment class='indent2'>// Put your code here.</jscomment><br>
-				<ln>04  </ln><htmlproperty class='indent1'>},</htmlproperty><br>
-				<ln>05  </ln><htmlproperty class='indent1'>update</htmlproperty>: <htmltag>function</htmltag>() <htmlproperty>{</htmlproperty><br>
-				<ln>06  </ln><jscomment class='indent2'>// Put your code here.</jscomment><br>
-				<ln>07  </ln><htmlproperty class='indent1'>},</htmlproperty><br>
-				<ln>08  </ln><htmlproperty class='indent1'>render</htmlproperty>: <htmltag>function</htmltag>() <htmlproperty>{</htmlproperty><br>
-				<ln>09  </ln><jscomment class='indent2'><htmlproperty>Jabo</htmlproperty>.<htmltag>clearCanvas</htmltag><span style="color: white">()</span></jscomment><br>
-				<ln>10  </ln><jscomment class='indent2'>// Put your code here.</jscomment><br>
-				<ln>11 </ln><htmlproperty class='indent1'>}</htmlproperty><br>
-				<ln>12 </ln><htmlproperty>})</htmlproperty>;<br>
-				<ln>13 </ln><jscomment>// Returns object Scene()</jscomment>
+				<ln>1 </ln><htmlproperty>Jabo</htmlproperty>.canvasContext<br>
 			</code>
 			<br>
-			<doc-subtitle>Properties</doc-subtitle>
-			<hr>
-			<doc-para class='c_green bullet indent1'>Scene.options</doc-para>
-			<doc-para class='indent2'>- returns [<htmlproperty>object</htmlproperty>]</doc-para><br>
+			<doc-subtitle>Recommended way of using the Canvas Rendering Context</doc-subtitle>
+			<code>
+				<ln>1 </ln><htmltag>let </htmltag>engine <htmlproperty>= </htmlproperty><htmltag>new </htmltag><htmlproperty>Jabo</htmlproperty>();<br>
+				<ln>2 </ln><htmltag>let </htmltag>c <htmlproperty>= engine</htmlproperty>.canvasContext;
+			</code>
+			<doc-para>Now you can use the variable <span class="c_green">c</span> to render things on screen</doc-para>
 			<div id="footer">
 				<center>
 					<p id="title">Jabo Micro Game Engine</p>

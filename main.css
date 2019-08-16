@@ -307,12 +307,12 @@ body {
 }
 
 .dl_btn:hover {
-	width: 200px;
+	width: 286px;
 	transform: scale(1.05);
 }
 
 .rel_btn {
-	width: 200px;
+	width: 286px;
 	text-decoration: none;
 	background-color: #262626;
 	color: white;
@@ -324,7 +324,7 @@ body {
 }
 
 .rel_btn:hover {
-	width: 254px;
+	width: 300px;
 	transform: scale(1.05);
 }
 
@@ -356,7 +356,7 @@ body {
 }
 
 .rel_btn_main {
-	width: 200px;
+	width: 286px;
 	text-decoration: none;
 	background-color: #262626;
 	color: white;
