@@ -4,8 +4,13 @@
 	font-family: 'Lexend Deca', sans-serif;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -394,4 +399,105 @@ body {
 	font-size: 32px;
 	padding: 8px;
 	display: inline-block;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 850px) {
+	#header {
+		height: 50vh;
+	}
+
+	#header #header-top {
+		height: 10vh
+	}
+
+	#header #header-center {
+		height: 30vh;
+	}
+
+	#header #header-bottom {
+		height: 10vh;
+	}
+
+	#header-content-title {
+		font-size: 86px;
+		width: 100%;
+		margin: auto;
+	}
+
+	#header-content-subtitle {
+		font-size: 13px;
+	}
+
+	#information-content {
+		height: auto;
+		padding: 64px;
+	}
+
+	hr {
+		display: none;
+	}
+
+  	.content-box {
+		width: calc(100% - 128px);
+		height: 20vh;
+		background-color: white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+		margin: 0;
+		transition: all 0.5s ease-in-out;
+		float: none;
+		padding: 8px;
+		margin: 8px 0px;
+	}
+
+	.content-box #top {
+		margin: auto;
+		margin-top: 32px;
+		float: left;
+		width: 50%;
+	}
+
+	.content-box #top i {
+		
+	}
+
+	.content-box #center {
+		float: left;
+		width: 50%;
+	}
+
+	#download {
+		height: auto;
+		padding: 64px;
+	}
+
+	#download #left-download {
+		width: 100%;
+		float: none;
+	}
+
+	.dl_btn {
+		width: 80%;
+		text-align: center;
+		margin: 0;
+	}
+
+	.dl_btn:hover {
+		width: 80%;
+		transform: scale(1.05);
+	}
+
+	.rel_btn {
+		width: 80%;
+		text-align: center;
+	}
+	.rel_btn:hover {
+		width: 80%;
+		transform: scale(1.05);
+	}
+
+	#download #right-download {
+		width: 100%;
+		float: none;
+	}
 }
