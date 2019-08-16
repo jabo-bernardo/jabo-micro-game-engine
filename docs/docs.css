@@ -310,3 +310,7 @@ rel-info {
 	display: block;
 	margin-left: 64px;
 }
+
+.non-highlight {
+	opacity: 0.5;
+}

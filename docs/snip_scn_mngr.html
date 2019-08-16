@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="docs.css">
+</head>
+<body>
+
+	<div id='header'>
+		<p id='site-title'><span style="color: #AADD00">Documentation</span> | Jabo Micro Game Engine</p>
+	</div>
+	<div class="navigator">
+		<!-- <div class="nav-group">
+			<p class="headline">Setting Up</p>
+			<div class="nav-group-child">
+				<button class="child active">Installing the Engine</button>
+			</div>
+		</div>
+		<div class="nav-group">
+			<p class="headline">Code Snippets</p>
+			<div class="nav-group-child">
+				<button class="child">Scene Manager</button>
+				<button class="child">Asset Loading</button>
+				<button class="child">Useful Functions</button>
+				<button class="child">Canvas Rendering</button>
+			</div>
+		</div> -->
+	</div>
+	<div class="main-content">
+		<div class="content">
+			<doc-title>Scene Manager Code Snippet</doc-title>
+			<doc-timestamp>Last Updated: August 19, 2019 15:31</doc-timestamp>
+			<hr>
+			<doc-para><a href="lib_scn_mngr.html">Scene Manager</a> is somewhat complex to implement thats why theres a specific page for it Thus, the developer is finding a solution for it to be easy to implement in our projects.</doc-para>
+			<code>
+				<ln>1 </ln><htmltag>let </htmltag>sceneManager <htmlproperty>= </htmlproperty><htmltag>new</htmltag> <htmlproperty>SceneManager</htmlproperty>();<br>
+				<ln>2 </ln><htmltag>setInterval</htmltag>(<htmltag>function</htmltag>() {<br>
+				<ln>3 </ln><htmltag class='indent1'>if</htmltag>(<htmlproperty>sceneManager</htmlproperty>.activeScene <htmlproperty>!=</htmlproperty> <htmltag>null</htmltag>) {<br>
+				<ln>4 </ln><htmlproperty class='indent2'>sceneManager</htmlproperty>.activeScene.options.<htmltag>update</htmltag>();<br>
+				<ln>5 </ln><htmlproperty class='indent2'>sceneManager</htmlproperty>.activeScene.options.<htmltag>render</htmltag>();<br>
+				<ln>6 </ln><span class="indent1">}</span><br>
+				<ln>7 </ln>}, <htmlproperty>16.66</htmlproperty>);<br>
+				<ln>8 </ln><htmlproperty>sceneManager</htmlproperty>.setScene(<jscomment>/* Your Scene Object*/</jscomment>)<br>
+			</code>
+			<doc-para>If you want to see the code snippet for Scene Object you can click <a href="lib_scene.html">here</a></doc-para>
+			<div id="footer">
+				<center>
+					<p id="title">Jabo Micro Game Engine</p>
+					<p id="copyright">Copyright (c) 2019 Jabo Micro Game Engine All Rights Reserved Designed by Code Jabo</p>
+					<a href="https://twitter.com/CodeJabo"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://github.com/jabo-bernardo/jabo-micro-game-engine/tree/master/Jabo%20Micro%20Game%20Engine"><i class="fab fa-github-square"></i></a>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="docs.js"></script>
+</body>
+</html>
