@@ -168,6 +168,35 @@ doc-para {
 	display: block;
 }
 
+folder-diagram {
+	padding: 8px;
+	display: block;
+}
+
+foldia-item0 {
+	padding: 2px;
+	padding-left: 16px;
+	background-color: #AADD00;
+	width: 128px;
+	display: block;
+	margin: 4px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+
+foldia-item1 {
+	padding: 2px;
+	padding-left: 16px;
+	background-color: #262626;
+	width: 128px;
+	display: block;
+	color: white;
+	margin: 4px;
+	margin-left: 32px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+
 .indent1 {
 	margin-left: 32px;
 }
@@ -211,4 +240,42 @@ doc-para {
 	font-size: 32px;
 	padding: 8px;
 	display: inline-block;
+}
+
+code {
+	color: white;
+	background-color: #262626;
+	font-family: 'Consolas', monospace;
+	padding: 16px;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 6px;
+	border-radius: 8px;
+	transition: all 0.5s ease-in-out;
+}
+
+htmltag {
+	color: #AADD00;
+}
+
+htmlproperty {
+	color: #DDAA00;
+}
+
+jscomment {
+	color: #545454;
+}
+
+ln {
+	color: #505050;
+	user-select: none;
+}
+
+code * {
+	font-family: 'Consolas', monospace;
+}
+
+code:hover {
+	transform: scale(1.01);
 }
