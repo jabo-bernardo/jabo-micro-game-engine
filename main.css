@@ -289,10 +289,10 @@ body {
 }
 
 .ver-1 {
-	opacity: 0.8;
+	opacity: 0.8!important;
 }
 .ver-2 {
-	opacity: 0.3;
+	opacity: 0.3!important;
 }
 
 .dl_btn {
