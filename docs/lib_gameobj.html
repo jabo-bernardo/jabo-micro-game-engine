@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jabo Micro Game Engine | Documentation</title>
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<!-- META TAGS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="docs.css">
+</head>
+<body>
+
+	<div id='header'>
+		<p id='site-title'><span style="color: #AADD00">Documentation</span> | Jabo Micro Game Engine</p>
+	</div>
+	<div class="navigator">
+		<!-- <div class="nav-group">
+			<p class="headline">Setting Up</p>
+			<div class="nav-group-child">
+				<button class="child active">Installing the Engine</button>
+			</div>
+		</div>
+		<div class="nav-group">
+			<p class="headline">Code Snippets</p>
+			<div class="nav-group-child">
+				<button class="child">Scene Manager</button>
+				<button class="child">Asset Loading</button>
+				<button class="child">Useful Functions</button>
+				<button class="child">Canvas Rendering</button>
+			</div>
+		</div> -->
+	</div>
+	<div class="main-content">
+		<div class="content">
+			<doc-title>GameObject()</doc-title>
+			<doc-timestamp>Last Updated: August 21, 2019 14:51</doc-timestamp>
+			<hr>
+			<doc-warning>This library is still in pre-alpha version and not recommended for production use.</doc-warning>
+			<doc-subtile>Usage: </doc-subtile>
+			<code>
+				<ln>1 </ln><htmltag>new </htmltag><htmlproperty>GameObject</htmlproperty>(<a href="lib_jabo.html">Jabo.canvasContext</a>);
+				<doc-avoid style='border-top-right-radius: 0px; border-bottom-right-radius: 0px;'>Doesn't contain any parameters but you can set it individually after declaration</doc-avoid>
+			</code>
+			<doc-subtitle>Properties: </doc-subtitle>
+			<hr>
+			<doc-para class='c_green bullet indent1'>x</doc-para>
+			<doc-para class='indent2'>- X coordinate</doc-para><br>
+			<doc-para class='c_green bullet indent1'>y</doc-para>
+			<doc-para class='indent2'>- Y coordinate</doc-para><br>
+			<doc-para class='c_green bullet indent1'>width</doc-para>
+			<doc-para class='indent2'>- Size of the object horizontally</doc-para><br>
+			<doc-para class='c_green bullet indent1'>height</doc-para>
+			<doc-para class='indent2'>- Size of object vertically</doc-para><br>
+			<doc-para class='c_green bullet indent1'>sprite</doc-para>
+			<doc-para class='indent2'>- May contain <a href='lib_animation.html'>Animation()</a>, <a href="lib_jsprite.html">JSprite()</a>, or <span class="c_green">none</span> (will render a black rectangle).</doc-para><br>
+			<doc-subtitle>Functions:</doc-subtitle>
+			<hr>
+			<doc-para class='c_green bullet indent1'>GameObject.update()</doc-para>
+			<doc-para class='indent2'>- Updates the object</doc-para><br>
+			<doc-para class='c_green bullet indent1'>GameObject.render()</doc-para>
+			<doc-para class='indent2'>- Renders the object</doc-para>
+			<doc-warning>Components are not yet implemented, you can use but will not do anything</doc-warning>
+			<doc-para class='c_green bullet indent1'>GameObject.addComponents()</doc-para>
+			<doc-para class='indent2'>- Adds a component in the object</doc-para><br>
+			<doc-para class='c_green bullet indent1'>GameObject.getComponents()</doc-para>
+			<doc-para class='indent2'>- Returns the list of components in the object.</doc-para><br>
+			<doc-para class='c_green bullet indent1'>GameObject.hasComponent(<htmlproperty>Name of Component</htmlproperty>)</doc-para>
+			<doc-para class='indent2'>- returns [boolean]</doc-para>
+			<div id="footer">
+				<center>
+					<p id="title">Jabo Micro Game Engine</p>
+					<p id="copyright">Copyright (c) 2019 Jabo Micro Game Engine All Rights Reserved Designed by Code Jabo</p>
+					<a href="https://twitter.com/CodeJabo"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://github.com/jabo-bernardo/jabo-micro-game-engine/tree/master/Jabo%20Micro%20Game%20Engine"><i class="fab fa-github-square"></i></a>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="docs.js"></script>
+</body>
+</html>

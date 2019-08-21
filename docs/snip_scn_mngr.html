@@ -38,18 +38,12 @@
 	<div class="main-content">
 		<div class="content">
 			<doc-title>Scene Manager Code Snippet</doc-title>
-			<doc-timestamp>Last Updated: August 19, 2019 15:31</doc-timestamp>
+			<doc-timestamp>Last Updated: August 21, 2019 11:37</doc-timestamp>
 			<hr>
-			<doc-para><a href="lib_scn_mngr.html">Scene Manager</a> is somewhat complex to implement thats why theres a specific page for it Thus, the developer is finding a solution for it to be easy to implement in our projects.</doc-para>
 			<code>
 				<ln>1 </ln><htmltag>let </htmltag>sceneManager <htmlproperty>= </htmlproperty><htmltag>new</htmltag> <htmlproperty>SceneManager</htmlproperty>();<br>
-				<ln>2 </ln><htmltag>setInterval</htmltag>(<htmltag>function</htmltag>() {<br>
-				<ln>3 </ln><htmltag class='indent1'>if</htmltag>(<htmlproperty>sceneManager</htmlproperty>.activeScene <htmlproperty>!=</htmlproperty> <htmltag>null</htmltag>) {<br>
-				<ln>4 </ln><htmlproperty class='indent2'>sceneManager</htmlproperty>.activeScene.options.<htmltag>update</htmltag>();<br>
-				<ln>5 </ln><htmlproperty class='indent2'>sceneManager</htmlproperty>.activeScene.options.<htmltag>render</htmltag>();<br>
-				<ln>6 </ln><span class="indent1">}</span><br>
-				<ln>7 </ln>}, <htmlproperty>16.66</htmlproperty>);<br>
-				<ln>8 </ln><htmlproperty>sceneManager</htmlproperty>.setScene(<jscomment>/* Your Scene Object*/</jscomment>)<br>
+				<ln>2 </ln><htmlproperty>sceneManager</htmlproperty>.init();<br>
+				<ln>3 </ln><htmlproperty>sceneManager</htmlproperty>.setScene(<jscomment>/* Your Scene Object*/</jscomment>)<br>
 			</code>
 			<doc-para>If you want to see the code snippet for Scene Object you can click <a href="lib_scene.html">here</a></doc-para>
 			<div id="footer">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Documentation | Snippets</title>
+	<title>Documentation | JSound</title>
 	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 
@@ -37,23 +37,25 @@
 	</div>
 	<div class="main-content">
 		<div class="content">
-			<doc-title>Canvas Rendering Snippet</doc-title>
-			<doc-timestamp>Last Updated: August 21, 2019 11:42</doc-timestamp>
+			<doc-title>JSound()</doc-title>
+			<doc-timestamp>Last Updated: August 21, 2019 12: 29</doc-timestamp>
 			<hr>
-			<doc-para>Jabo Micro Game Engine uses <a target='_blank'href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">Canvas</a> to render graphics on screen. The reason is it's convenient and fast at the same time.</doc-para>
-			<br>
-			<doc-para>The Canvas Rendering Context is located at <a href="lib_jabo.html">Jabo() Library</a> to access it, follow the code below.</doc-para>
+			<doc-para>This library provides your project a sound to make it more attractive.</doc-para>
+			<doc-warning>Due to modern browsers blocking autoplay, this library might not work sometimes. You may receive a "Uncaught (in promise) DOMException" error on your console.</doc-warning>
+			<doc-subtitle>Usage: </doc-subtitle>
 			<code>
-				<ln>1 </ln><htmlproperty>Jabo</htmlproperty>.canvasContext<br>
+				<ln>1 </ln><htmltag>new </htmltag>JSound(<htmlproperty>"path/to/music.format"</htmlproperty>);
 			</code>
-			<br>
-			<doc-subtitle>Recommended way of using the Canvas Rendering Context</doc-subtitle>
-			<code>
-				<ln>1 </ln><htmltag>let </htmltag>engine <htmlproperty>= </htmlproperty><htmltag>new </htmltag><htmlproperty>Jabo</htmlproperty>();<br>
-				<ln>2 </ln><htmlproperty>engine</htmlproperty>.init()<br>
-				<ln>3 </ln><htmltag>let </htmltag>c <htmlproperty>= engine</htmlproperty>.canvasContext;
-			</code>
-			<doc-para>Now you can use the variable <span class="c_green">c</span> to render things on screen</doc-para>
+			<doc-subtitle>Functions</doc-subtitle>
+			<hr>
+			<doc-para class='c_green bullet indent1'>JSound.play()</doc-para>
+			<doc-para class='indent2'>- plays the sound</doc-para><br>
+			<doc-para class='c_green bullet indent1'>JSound.pause()</doc-para>
+			<doc-para class='indent2'>- pause the sound</doc-para><br>
+			<doc-para class='c_green bullet indent1'>JSound.loop()</doc-para>
+			<doc-para class='indent2'>- makes the cound loop infinitely</doc-para><br>
+			<doc-para class='c_green bullet indent1'>JSound.unloop()</doc-para>
+			<doc-para class='indent2'>- remove the loop property</doc-para><br>
 			<div id="footer">
 				<center>
 					<p id="title">Jabo Micro Game Engine</p>
