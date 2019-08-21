@@ -36,8 +36,7 @@ body {
 #header {
 	width: 100%;
 	height: 100vh;
-	/* Credits: https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi6wsjL6YbkAhWJbN4KHTAIAj8QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.goodfreephotos.com%2Fchina%2Fhong-kong%2Fchina-hong-kong-city-with-mountains-in-the-background.jpg.php&psig=AOvVaw3QaBjSYFV1TCTXIXC_QES3&ust=1566025408948709*/
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/header_bg.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(170, 221, 0, 0.1), rgba(170, 221, 0, 0.8)), url('img/header_bg.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -64,14 +63,38 @@ body {
 	padding-left: 10px;
 }
 
-#site-title {
+.navigation-bar {
+	margin: auto;
+	padding-top: 10vh
+}
+
+.navigation-bar a {
+	display: inline-block;
+	width: 254px;
+	/*background-color: white;*/
+	border: 3px solid white;
 	color: white;
+	padding: 8px 0px;
+	text-decoration: none;
+	border-bottom-left-radius: 16px; 
+	border-top-right-radius: 16px;
+	margin: 8px 16px;
+	transition: all 0.5s ease-in-out;
+}
+
+.navigation-bar a:hover {
+	transform: scale(1.05);
+	transition: all 0.2s ease-in-out;
+	letter-spacing: 2px;
+}
+
+.navigation-bar p {
+	color: #AADD00!important;
 	margin: 32px;
-	letter-spacing: 4px;
+	margin-top: 0px;
+	letter-spacing: 2px;
 	font-size: 16px;
 	transition: all 0.5s ease-in-out;
-	float: left;
-	padding: 8px 32px;
 	user-select: none;
 	font-weight: bold;
 }
@@ -113,9 +136,9 @@ body {
 
 .git_btn {
 	background-color: #AADD00!important;
-	color: white!important;
 	border-color: #AADD00!important;
 	font-weight: bold!important;
+	color: #262626!important;
 }
 
 #header-bottom #header-content-subtitle {
