@@ -24,7 +24,7 @@
 */
 class Jabo {
 	constructor() {
-		this._version = '0.1';
+		this._version = '0.1-beta';
 	}
 
 	/* 
