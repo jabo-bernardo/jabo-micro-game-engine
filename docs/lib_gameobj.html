@@ -41,9 +41,8 @@
 	<div class="main-content">
 		<div class="content">
 			<doc-title>GameObject()</doc-title>
-			<doc-timestamp>Last Updated: August 21, 2019 14:51</doc-timestamp>
+			<doc-timestamp>Last Updated: August 24, 2019 12:38</doc-timestamp>
 			<hr>
-			<doc-warning>This library is still in pre-alpha version and not recommended for production use.</doc-warning>
 			<doc-subtile>Usage: </doc-subtile>
 			<code>
 				<ln>1 </ln><htmltag>new </htmltag><htmlproperty>GameObject</htmlproperty>(<a href="lib_jabo.html">Jabo.canvasContext</a>);
@@ -66,14 +65,16 @@
 			<doc-para class='c_green bullet indent1'>GameObject.update()</doc-para>
 			<doc-para class='indent2'>- Updates the object</doc-para><br>
 			<doc-para class='c_green bullet indent1'>GameObject.render()</doc-para>
-			<doc-para class='indent2'>- Renders the object</doc-para>
-			<doc-warning>Components are not yet implemented, you can use but will not do anything</doc-warning>
-			<doc-para class='c_green bullet indent1'>GameObject.addComponents()</doc-para>
-			<doc-para class='indent2'>- Adds a component in the object</doc-para><br>
-			<doc-para class='c_green bullet indent1'>GameObject.getComponents()</doc-para>
-			<doc-para class='indent2'>- Returns the list of components in the object.</doc-para><br>
-			<doc-para class='c_green bullet indent1'>GameObject.hasComponent(<htmlproperty>Name of Component</htmlproperty>)</doc-para>
-			<doc-para class='indent2'>- returns [boolean]</doc-para>
+			<doc-para class='indent2'>- Renders the object</doc-para><br>
+			<doc-para class='c_green bullet indent1'>GameObject.near()</doc-para>
+			<doc-para class='indent2'>- returns nearest GameObject</doc-para><br>
+			<doc-para class='c_green bullet indent1'>GameObject.Translate(<htmlproperty>xMove</htmlproperty>, <htmlproperty>yMove</htmlproperty>)</doc-para>
+			<doc-para class='indent2'>- Moves object <a href="rel-note-0.1-beta.html">more info.</a></doc-para><br>
+			<doc-para class='c_green bullet indent1'>GameObject.delete()</doc-para>
+			<doc-para class='indent2'>- removes this GameObject() from objects[]</doc-para><br>
+			<doc-subtitle>Additional Information</doc-subtitle>
+			<hr>
+			<doc-para id='objlists'>When you initialize a GameObject() it is automatically added into objects[] variable. objects[] are built-in variable to store all Game Objects. You can easily get an element from objects[] by using objects[index].</doc-para>
 			<div id="footer">
 				<center>
 					<p id="title">Jabo Micro Game Engine</p>
