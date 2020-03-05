@@ -1,19 +1,12 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("top_bar").style.top = "0";
-  } else {
-    document.getElementById("top_bar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
+const docsContent = "(nav-grp) / Getting Started (end) (nav-child) // index.html Introduction (end) (nav-child-end) (nav-group-end)";
+
+let goTo = link => {
+	location.href = link;
 }
 
-const docsContent = "(nav-grp) / Getting Started (end) (nav-child) // index.html Introduction (end) (nav-child) // installing.html Installing the Library (end) (nav-child) // setup.html Setting up JMGE (end) (nav-child-end) (nav-group-end)";
-
-let read = () => {
-	nav = document.querySelector('.navigation');
-	cont = docsContent.split(' ');
+let read = content => {
+	nav = document.querySelector('.navigator');
+	cont = content.split(' ');
 	output = '';
 	for (var i = 0; i < cont.length; i++) {
 		if(cont[i] == '(nav-grp)') {
@@ -53,3 +46,5 @@ let read = () => {
 	div.innerHTML = output;
 	nav.appendChild(div);
 }
+
+read(docsContent);

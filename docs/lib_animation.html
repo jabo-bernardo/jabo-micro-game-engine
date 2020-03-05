@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jabo Micro Game Engine | Documentation</title>
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<!-- META TAGS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Icon -->
+	<link rel = "icon" type = "image/png" href ="../img/logo.png">
+
+	<link rel="stylesheet" type="text/css" href="docs.css">
+</head>
+<body>
+
+	<div id='header'>
+		<p id='site-title'><span style="color: #AADD00">Documentation</span> | Jabo Micro Game Engine</p>
+	</div>
+	<div class="navigator">
+		<!-- <div class="nav-group">
+			<p class="headline">Setting Up</p>
+			<div class="nav-group-child">
+				<button class="child active">Installing the Engine</button>
+			</div>
+		</div>
+		<div class="nav-group">
+			<p class="headline">Code Snippets</p>
+			<div class="nav-group-child">
+				<button class="child">Scene Manager</button>
+				<button class="child">Asset Loading</button>
+				<button class="child">Useful Functions</button>
+				<button class="child">Canvas Rendering</button>
+			</div>
+		</div> -->
+	</div>
+	<div class="main-content">
+		<div class="content">
+			<doc-title>Animation()</doc-title>
+			<doc-timestamp>Last Updated: August 21, 2019 14:15</doc-timestamp>
+			<hr>
+			<doc-para>Jabo Micro Game Engine don't just support static sprites it also supports animated ones.</doc-para>
+			<doc-subtitle>Usage:</doc-subtitle>
+			<code>
+				<ln>1 </ln><htmltag>new </htmltag><htmlproperty>Animation</htmlproperty>(<a href="lib_jabo.html">Jabo.canvasContext</a>, {options});
+			</code>
+			<doc-subtitle>Parameter: <span class="c_green">options</span></doc-subtitle>
+			<hr>
+			<doc-para class='bullet c_green indent1'>sprite:</doc-para>
+			<doc-para class='indent2'>mush contain (JSprite)</doc-para>
+			<doc-avoid>All the frames should be combined in a single image file.</doc-avoid><br>
+			<doc-para class='bullet c_green indent1'>x:</doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>y:</doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>width:</doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>height:</doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>speed:<jscomment> - How fast will the animation be updated</jscomment></doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>frame_count:<jscomment> - number of frames</jscomment></doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>frame_width:<jscomment> - width of every frame</jscomment></doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-para class='bullet c_green indent1'>frame_height:<jscomment> - height of every frame</jscomment></doc-para>
+			<doc-para class='indent2'>mush contain (integer)</doc-para><br>
+			<doc-subtitle>Functions</doc-subtitle>
+			<hr>
+			<doc-para class='bullet c_green indent1'>Animation.update()</doc-para>
+			<doc-para class='indent2'>- Updates the animation</doc-para><br>
+			<doc-para class='bullet c_green indent1'>Animation.render()</doc-para>
+			<doc-para class='indent2'>- Shows the animation</doc-para>
+			<div id="footer">
+				<center>
+					<p id="title">Jabo Micro Game Engine</p>
+					<p id="copyright">Copyright (c) 2019 Jabo Micro Game Engine All Rights Reserved Designed by Code Jabo</p>
+					<a href="https://twitter.com/CodeJabo"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://github.com/jabo-bernardo/jabo-micro-game-engine/tree/master/Jabo%20Micro%20Game%20Engine"><i class="fab fa-github-square"></i></a>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="docs.js"></script>
+</body>
+</html>
