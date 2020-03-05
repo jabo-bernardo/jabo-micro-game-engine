@@ -117,3 +117,9 @@ a {
 .container .content .info-container .info .description {
 	padding: 8px 48px;
 }
+
+@media only screen and (max-width: 1000px) {
+	.container {
+		margin: 0px;
+	}
+}
