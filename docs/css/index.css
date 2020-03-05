@@ -10,7 +10,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #BBB;
+  background: transparent;
 }
 
 /* Handle */
@@ -131,4 +131,70 @@ body {
 	background-color: white;
 	border: 2px solid rgb(250, 94, 0);
 	color: rgb(250, 94, 0);
+}
+
+.docs-top-bar {
+	height: 10vh;
+}
+
+.navigation {
+	height: calc(90vh - 4px);
+	width: 20%;
+	background-color: #DDD;
+	display: inline-block;
+	overflow-y: scroll;
+}
+
+.nav-content {
+	width: calc(80% - 32px - 4px);
+	height: calc(90vh - 4px - 32px);
+	padding: 16px;
+	display: inline-block;
+	font-family: "Lato";
+	overflow-y: scroll;
+}
+
+.doc-title {
+	font-weight: 900;
+}
+
+.doc-date {
+	font-size: 16px;
+	color: #999;
+}
+
+.doc-content {
+	padding: 8px 64px;
+	text-align: left;
+	font-size: 16px;
+}
+
+.navigation * {
+	display: block;
+}
+
+.navigation .nav-group {
+	padding: 16px;
+}
+
+.navigation .nav-group .headline {
+	background-color: white;
+	text-align: center;
+	padding: 8px 0px;
+	font-family: "Lato";
+	font-weight: 900;
+	margin-bottom: 8px;
+	color: rgb(250, 94, 0);
+}
+
+.navigation a {
+	text-decoration: none;
+	text-align: right;
+	padding-right: 8px;
+	background-color: white;
+	margin: 8px 8px;
+	font-family: "Lato";
+	font-weight: 700;
+	padding: 6px 16px;
+	color: #FF9900;
 }
