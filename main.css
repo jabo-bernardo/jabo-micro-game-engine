@@ -1,7 +1,3 @@
-:root {
-
-}
-
 * {
 	padding: 0px;
 	margin: 0px;
@@ -54,7 +50,7 @@ li:before {
 }
 
 body {
-	background-color: #DDD;
+	background-color: #EEE;
 }
 
 .container {
@@ -64,11 +60,6 @@ body {
 	height: auto;
 }
 
-.container .header {
-	padding: 16px 0px;
-	padding-bottom: 64px;
-}
-
 a {
 	padding: 6px 16px;
 	text-decoration: none;
@@ -76,6 +67,11 @@ a {
 	background: linear-gradient(#fe8c00 25%, #f83600);
 	color: white;
 	border-radius: 4px;
+}
+
+.container .header {
+	padding: 16px 0px;
+	padding-bottom: 64px;
 }
 
 .container .header img {
@@ -119,7 +115,20 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
+	a {
+		display: block;
+		margin: 4px 4px;
+	}
+
+	li {
+		display: block;
+	}
+
 	.container {
 		margin: 0px;
+	}
+
+	.container .content .info-container {
+		flex-direction: column;
 	}
 }
