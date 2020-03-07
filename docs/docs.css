@@ -1,22 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:400,700,900&display=swap");
+
+
+:root {
+	--main-color: #fe8c00;
+}
+
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #262626; 
+  background: #FFF; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #AADD00; 
+  background: linear-gradient(25deg, #f83600, var(--main-color)); 
 }
 
 html {
@@ -24,14 +31,14 @@ html {
 }
 
 body {
-	background-color: #DDD;
+	background-color: #FFF;
 }
 
 #header {
 	width: 100%;
 	height: 96px;
 	/* Credits: https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi6wsjL6YbkAhWJbN4KHTAIAj8QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.goodfreephotos.com%2Fchina%2Fhong-kong%2Fchina-hong-kong-city-with-mountains-in-the-background.jpg.php&psig=AOvVaw3QaBjSYFV1TCTXIXC_QES3&ust=1566025408948709*/
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../img/header_bg.jpg');
+	background: linear-gradient(25deg, #f83600, var(--main-color));
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -42,52 +49,52 @@ body {
 	color: white;
 	padding: 32px;
 	font-weight: bold;
+	font-family: "Open Sans";
 }
 
 .navigator {
 	width: 20%;
 	height: calc(100vh - 96px);
 	overflow-y: scroll;
-	background-color: #262626;
-	overflow-x: hidden;
+	background-color: white;
 	float: left;
 }
 
 .navigator .headline {
-	color: #AADD00;
-	font-size: 17px;
+	color: black;
+	font-size: 18px;
 	font-weight: bold;
 	user-select: none;
 	padding: 8px;
-}
-
-.navigator .nav-group-child {
-	margin-left: 10%;
+	font-family: "Open Sans";
+	border-bottom: 1px solid #BBB;
+	margin: 8px;
 }
 
 .navigator .nav-group-child .child {
-	background-color: #EEE;
 	outline: none;
 	color: #262626;
 	border: none;
-	width: 100%;
-	padding: 2px 0px;
-	margin-top: 6px;
-	transition: all 0.2s ease-in-out;
+	width: calc(100% - 64px - 16px);
+	margin: 6px 32px;
+	padding: 8px;
+	transition: all .2s ease-in-out;
 	display: inline-block;
 	font-size: 14px;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
 }
 
 .navigator .nav-group-child .child:hover {
-	transform: scale(1.05);
-	opacity: 0.95;
-	background-color: #AADD00;
+	background: linear-gradient(25deg, #f83600, var(--main-color));
+	border-radius: 4px;
+	font-weight: bold;
+	color: white;
+	transform: scale(1.1);
 }
 
 .navigator .active {
-	background-color: #AADD00!important;
+	background-color: var(--main-color)!important;
 	color: #262626!important;
 }
 
@@ -100,15 +107,13 @@ body {
 }
 
 .content {
-	width: 80%;
-	margin: auto;
-	padding: 64px;
-	margin-top: 64px;
+	width: calc(100% - (300px));
 	background-color: white;
+	padding: 64px 150px;
 }
 
 hr {
-	margin: 8px 0px;
+	margin: 16px 16px;
 }
 
 doc-title {
@@ -125,37 +130,27 @@ doc-timestamp {
 }
 
 doc-warning {
-	width: 100%;
+	width: calc(100% - 16px);
 	padding: 8px;
 	display: block;
-	background-color: rgba(255, 0, 0, 0.5);
-	border-radius: 8px;
-	color: #FF0000!important;
-	font-weight: bold;
+	background-color: rgba(243, 44, 44, 0.877);
+	border-radius: 4px;
+	color: rgb(255, 255, 255)!important;
 	margin: 8px 0px;
 	transition: all 0.5s ease-in-out;
 	user-select: none;
 }
 
 doc-avoid {
-	width: 100%;
+	width: calc(100% - 16px);
 	padding: 8px;
 	display: block;
-	background-color: rgba(255, 255, 0, 0.5);
-	border-radius: 8px;
-	color: #FFCC00;
-	font-weight: bold;
+	background-color: rgb(211, 211, 211);
+	border-radius: 4px;
+	color: rgb(0, 0, 0);
 	margin: 8px 0px;
 	transition: all 0.5s ease-in-out;
 	user-select: none;
-}
-
-doc-avoid:hover {
-	transform: scale(1.01);
-}
-
-doc-warning:hover {
-	transform: scale(1.01);
 }
 
 doc-subtitle {
@@ -167,6 +162,7 @@ doc-subtitle {
 doc-para {
 	font-size: 16px;
 	display: block;
+	line-height: 26px;
 }
 
 folder-diagram {
@@ -175,18 +171,18 @@ folder-diagram {
 }
 
 foldia-item0 {
-	padding: 2px;
+	padding: 4px;
 	padding-left: 16px;
-	background-color: #AADD00;
+	background-color: var(--main-color);
 	width: 128px;
 	display: block;
 	margin: 4px;
 	font-size: 12px;
-	border-radius: 4px;
+	border-radius: 2px;
 }
 
 foldia-item1 {
-	padding: 2px;
+	padding: 4px;
 	padding-left: 16px;
 	background-color: #262626;
 	width: 128px;
@@ -195,7 +191,7 @@ foldia-item1 {
 	margin: 4px;
 	margin-left: 32px;
 	font-size: 12px;
-	border-radius: 4px;
+	border-radius: 2px;
 }
 
 .indent1 {
@@ -211,14 +207,21 @@ foldia-item1 {
 }
 
 .main-content .content a {
-	color: #AADD00;
+	color: var(--main-color);
 	text-decoration: none;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.1s ease-in-out;
 	display: inline-block;
 }
 
 .main-content .content a:hover {
 	transform: scale(1.05);
+	background: #f83600;
+	color: white;
+	padding: 2px 8px;
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-family: "Open Sans";
+	font-weight: bold;
 }
 
 /*FOOTER*/
@@ -228,8 +231,9 @@ foldia-item1 {
 #footer #title {
 	font-size: 24px;
 	padding: 16px;
-	color: #262626;
+	color: var(--main-color);
 	font-weight: bold;
+	font-family: "Open Sans";
 }
 
 #footer p {
@@ -237,32 +241,38 @@ foldia-item1 {
 }
 
 #footer a {
-	color: #AADD00;
+	color: var(--main-color);
 	font-size: 32px;
 	padding: 8px;
 	display: inline-block;
+}
+
+#footer a:hover {
+	color: white;
+	font-weight: normal;
+	transform: scale(1.5);
+	padding: 0px 8px;
 }
 
 code {
 	color: white;
 	background-color: #262626;
 	font-family: 'Consolas', monospace;
-	padding: 16px;
+	padding: 18px;
 	display: block;
-	width: 100%;
+	width: calc(100% - 36px);
 	height: auto;
 	margin: 8px 0px;
-	border-radius: 8px;
-	transition: all 0.5s ease-in-out;
+	border-radius: 4px;
 }
 
 htmltag {
-	color: #AADD00;
+	color: var(--main-color);
 	font-weight: bold!important;
 }
 
 htmlproperty {
-	color: #DDAA00;
+	color: rgb(0, 221, 66);
 	font-weight: lighter!important;
 }
 
@@ -279,12 +289,8 @@ code * {
 	font-family: 'Consolas', monospace;
 }
 
-code:hover {
-	transform: scale(1.03);
-}
-
 .c_green {
-	color: #AADD00;
+	color: var(--main-color);
 }
 
 .bullet {
